@@ -1,11 +1,11 @@
 # DSA210_term_project
 # Menstrual Cycle and Step Count Analysis
 
-## Motivation
+## Description
 
-My curiosity about this subject stems from noticing fluctuations in my activity levels during certain times of the month and wanting to explore whether these changes align with my menstrual cycle. This project explores the potential correlation between menstrual periods and daily step counts. The goal is to investigate whether there is a negative correlation between these two variables, offering a data-driven approach to better understand patterns in activity levels.
+This project explores the potential correlation between menstrual periods and daily step counts. By analyzing self-tracked data from the Clue Period Tracking App and the Apple Health App, the study aims to understand how menstrual cycles might influence activity levels. The goal is to investigate whether there is a negative correlation between these two variables, using a data-driven approach to identify patterns in activity levels.
 
-## Hypothesis
+### Hypothesis
 In this project, the relationship between menstrual periods and daily step counts is examined using the following hypotheses:
 
 Null Hypothesis (H₀):
@@ -13,6 +13,9 @@ There is no correlation between menstrual periods and daily step counts.
 
 Alternative Hypothesis (H₁):
 There is a negative correlation between menstrual periods and daily step counts.
+
+## Motivation
+My curiosity about this subject stems from personal observations of fluctuations in my physical activity levels during certain times of the month. These changes made me wonder whether they might align with specific phases of my menstrual cycle, particularly during menstruation. By combining data from a period tracking app and daily step counts, I aim to explore this relationship and uncover any patterns that may exist.
 
 ## Dataset
 
