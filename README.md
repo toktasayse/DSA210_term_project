@@ -3,9 +3,8 @@
 
 ## Description
 
-This project explores the potential correlation between menstrual periods and daily step counts. By analyzing self-tracked data from the Clue Period Tracking App and the Apple Health App, the study aims to understand how menstrual cycles might influence activity levels. The goal is to investigate whether there is a negative correlation between these two variables, using a data-driven approach to identify patterns in activity levels.
-
-### Hypothesis
+This project explores the relationship between menstrual periods and daily step counts, aiming to understand how menstrual cycles may influence physical activity. By analyzing self-tracked data from the Clue Period Tracking App and the Apple Health App, the study evaluates potential patterns and correlations between these variables.
+### Hypotheses
 In this project, the relationship between menstrual periods and daily step counts is examined using the following hypotheses:
 
 Null Hypothesis (H₀):
@@ -25,30 +24,53 @@ This project utilizes personal data collected from the following sources:
 
 Both datasets are manually exported from the apps installed on my personal device. The data is anonymized and used exclusively for educational purposes in this term project.
 
-## Project Plan
 
-1. **Data Collection and Cleaning**
-   - Export menstrual cycle data from the Clue app.
-   - Export daily step count data from the Apple Health app.
-   - Preprocess the data to align formats and dates for analysis.
 
-2. **Exploratory Data Analysis (EDA)**
-   - Summarize and visualize trends in menstrual cycles and step counts.
-   - Identify any potential patterns or anomalies in the data.
+## Data Cleaning and Preprocessing
+To ensure accurate analysis, the following steps were taken:
+### Menstrual Cycle Data:
+* Parsed and retained only the start and end dates of menstrual periods.
+### Step Count Data:
+* Filtered data to retain only the date and daily step count columns.
+### Merging:
+* Combined datasets by aligning dates to create a unified DataFrame.
+* Removed incomplete or invalid records.
 
-3. **Hypothesis Testing**
-   - Test the hypothesis that there is a negative correlation between menstrual periods and daily step counts.
-   - Use statistical methods to evaluate the relationship.
+## Exploratory Data Analysis (EDA)
+1. Daily Trends Over Time
+* Plotted daily step counts to visualize fluctuations in activity levels.
+* Highlighted menstrual and non-menstrual phases to identify differences in activity patterns.
+2. Step Count Distribution
+* Created histograms to compare step count distributions during menstrual and non-menstrual periods.
+3. Comparative Analysis
+* Conducted comparisons of average step counts between menstrual and non-menstrual periods.
 
-4. **Modeling and Insights**
-   - Develop a simple model to predict activity levels based on menstrual cycle phases.
-   - Interpret the results to provide actionable insights.
+## Hypothesis Testing
+### Statistical Analysis
+**Whitman U Test:** Conducted to compare step counts between menstrual and non-menstrual periods.
+* Result: No statistically significant difference (p-value: 0.87), indicating there is no significant difference in step counts during menstrual period.
+### Effect Size
+**Rank-Biserial correlation:** Conducted to measure the magnitude of the effect.
+* Result: Minimal effect size (0.03)
 
-5. **Conclusion**
-   - Summarize findings and discuss the implications for understanding the relationship between physical activity and the menstrual cycle.
-   - Highlight limitations and future directions for similar studies.
+### Key Findings
+* Overall Relationship:
+   * The test results do not support the alternative hypothesis, as the p-value is too high to conclude a significant decrease in activity during menstrual periods.
+   * The effect size analysis also indicates a minimal effect, reinforcing the lack of a meaningful correlation.
+      
+## Conclusion and Insights
+**Conclusion:**
+The null hypothesis cannot be rejected, as the Whitman U Test results indicate no significant difference in step counts during menstrual periods.
+
+**Implications:**
+   * Results suggest that menstrual cycles may not strongly influence activity levels, but further exploration with more variables could be beneficial.
+   * Larger datasets and additional factors like mood, sleep, and weather should be considered in future studies.
 
 
 ## License
 
 This project is for academic purposes only and should not be used as medical advice. Data is self-reported and limited to a single individual, which may not generalize to others.
+
+## Acknowledgments
+
+Thanks to the developers of the Clue Period Tracking App and Apple Health App for providing tools that make personal data tracking accessible and insightful.
