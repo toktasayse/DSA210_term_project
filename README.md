@@ -28,6 +28,8 @@ Both datasets are manually exported from the apps installed on my personal devic
 
 ## Data Cleaning and Preprocessing
 To ensure accurate analysis, the following steps were taken:
+### Feature Engineering:
+* Transformed raw step count data into daily aggregated values using feature engineering techniques to ensure consistency and comparability across the dataset.
 ### Menstrual Cycle Data:
 * Parsed and retained only the start and end dates of menstrual periods.
 ### Step Count Data:
